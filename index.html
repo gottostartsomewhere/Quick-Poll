@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QuickPoll</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="main">Quick-Poll</h1>
+        <h4 id="main1">Instant Decisions made easy</h4>
+        <div class="sub-container">
+        <h1>Create a Poll</h1>
+        <form id="create-poll-form">
+         <div class="space">
+            <label for="poll-id" class="text1">Name Your Poll:</label>
+            <input type="text" id="poll-id" required><br>
+        </div>
+            <label for="options" class="text2">Options (Seperated By Commas):</strong></label>
+            <input type="text" id="options" required><br>
+            <button type="submit">Create My Poll</button>
+        </form>
+        <div id="create-message"></div>
+    </div>
+    <div class="sub-container">
+        <h1>View Poll Results</h1>
+        <form id="view-poll-form">
+            <label for="view-poll-id" class="text1">Name of a Poll you wanna Vote in (Given that it exists):</label>
+            <input type="text" id="view-poll-id" required><br>
+            <button type="submit">Vote / View Results</button>
+        </form>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="poll.js"></script>
+</body>
+</html>
