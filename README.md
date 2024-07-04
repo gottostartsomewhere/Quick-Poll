@@ -9,4 +9,4 @@ Allows only 1 vote per session.
 
 Still in Development, More Features to be added.
 Check out the Site at 
-https://gottastartsomehwere.github.io/Quick-Poll
+https://gottostartsomehwhere.github.io/Quick-Poll
