@@ -1,0 +1,71 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px;
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+canvas {
+    display: block;
+    margin: 20px auto;
+    max-width: 400px;
+    max-height: 400px;
+}
+#poll-options{
+    border:4px solid whitesmoke;
+    box-shadow: inset;
+    width:40%;
+    text-align:left;
+    
+}
+#resultsChart {
+    max-width: 100%;
+    margin-top: 30px;
+}
+.options {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    background-color: white;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin-right: 10px;
+    vertical-align: middle;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.options:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.options:checked::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.options:hover {
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.5);
+}
+#message{
+    margin-top:20px;
+    font-weight:bold;
+}
+#poll-options{
+    background-color:whitesmoke;
+}
