@@ -13,13 +13,13 @@ $(document).ready(function() {
 
     let pollOptionsHtml = '';
     for (let option of poll.options) {
-        pollOptionsHtml += `<input type="radio" name="option" value="${option}"> ${option}<br>`;
+        pollOptionsHtml += `<input type="radio" class="options" name="option" value="${option}"> ${option}<br>`;
     }
     $('#poll-options').html(pollOptionsHtml);
 
 
     if (document.cookie.split(';').some((item) => item.trim().startsWith(`voted_${pollId}=`))) {
-        $('#message').text('You have already voted in this poll.');
+        $('#message').text('You have already voted in this poll  ¯|_(ツ)_|¯.');
         $('#vote-form').hide();
     }
 

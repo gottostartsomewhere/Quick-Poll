@@ -2,6 +2,7 @@ $(document).ready(function() {
     $('#create-poll-form').submit(function(event) {
         event.preventDefault();
         let pollId = $('#poll-id').val();
+        let pollName=$('#poll-name').val();
         let options = $('#options').val().split(',').map(option => option.trim());
         let polls = JSON.parse(localStorage.getItem('polls')) || {};
         

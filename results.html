@@ -2,26 +2,14 @@
 <html>
 <head>
     <title>Voting/Results</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        .container {
-            max-width: 600px;
-            margin: auto;
-        }
-        canvas {
-            display: block;
-            margin: 20px auto;
-            max-width: 400px;
-            max-height: 400px;
-        }
-    </style>
+    
+      <link rel="stylesheet" href="results.css">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Results so far for "<span id="poll-id"></span>"</h1>
+    <div class="results">
+        <h1><span id="poll-id"></span></h1>
+        <h3>Cast your votes</h3>
         <div id="poll-options"></div>
         <form id="vote-form">
             <button type="submit" id="new">Vote</button>
